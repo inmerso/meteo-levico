@@ -43,7 +43,7 @@ body{
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255,255,255,0.75);
     border: 1px solid rgba(255,255,255,0.01);
-    border-radius: 16px;
+    border-radius: 1px 1px 26px 26px;
     box-shadow: 0 10px 30px rgba(35,35,35,0.1);
     color: #232323;
     font-size: 15px;
@@ -51,7 +51,7 @@ body{
     padding: 10px;
     text-align: right;
     width: 326px;
-    margin: 10% 0;
+    margin: 2% 0;
 }
 
 .screen:hover{
@@ -64,12 +64,25 @@ body{
     margin: 5% 0;
 }
 
+.location{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: invert(10px);
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 1px 1px;
+    box-shadow: 0 5px 10px #232323;
+    font-size: 24px;
+    font-weight: 800;
+    height: 36px;
+}
+
 .calc-button{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255,255,255,0.75);
     border: 1px solid rgba(35,35,35,0.1);
-    border-radius: 16px;
+    border-radius: 1px;
     box-shadow: 0 30px 30px rgba(35,35,35,0.1);
     color: #232323;
     flex-basis: 10%;

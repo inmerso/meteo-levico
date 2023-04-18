@@ -2,10 +2,10 @@ var weatherData = document.getElementById("weather_data");
 
 function w_interpretation(code){
     switch (code) {
-        case 0: return "Clear sky";
-        case 1: return "Mainly clear";
-        case 2: return "partly cloudy"
-        case 3:	return "overcast";
+        case  0: return "Clear sky";
+        case  1: return "Mainly clear";
+        case  2: return "Partly cloudy"
+        case  3: return "Overcast";
         case 45: return "Fog";
         case 48: return "Depositing rime fog";
         case 51: return "Drizzle: Light intensity";
@@ -55,8 +55,8 @@ function weather_data() {
         </h2>
         `;
         document.getElementById("display_data").innerHTML = html;
-        msg="last update: " + data.current_weather.time
-
+        
+        msg = "last update: " + data.current_weather.time
         document.getElementById("display_time").innerHTML = msg;
         
     }).catch(function(error){
