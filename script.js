@@ -47,18 +47,17 @@ function weather_data() {
     }).then(function(data){
         w_code_msg = w_interpretation(data.current_weather.weathercode);
         const html = `
-        <p>
-        <h2 class="text-danger text-center">
-        Temperature:${data.current_weather.temperature}°C<br>
-        ${w_code_msg}
-        wind:${data.current_weather.winddirection}@${data.current_weather.windspeed}km/h
-        </h2>
-        `;
+            <p>
+            <h2 class="text-danger text-center">
+            temperature:${data.current_weather.temperature}°C<br>
+            ${w_code_msg}<br>
+            wind:${data.current_weather.winddirection}@${data.current_weather.windspeed}km/h
+            </h2>
+            `;
         document.getElementById("display_data").innerHTML = html;
-        
+
         msg = "last update: " + data.current_weather.time
         document.getElementById("display_time").innerHTML = msg;
-        
     }).catch(function(error){
         console.log(error);
     })

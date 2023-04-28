@@ -104,5 +104,11 @@ body{
 .timer{
     text-align: center;
     font-size: small;
+    padding-top: 300px;
 }
 
+.signature{
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 20px;
+}
