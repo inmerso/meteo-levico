@@ -35,7 +35,6 @@ function w_interpretation(code){
 }
 
 function weather_data() {
-    // var url = "https://api.open-meteo.com/v1/forecast?latitude=46.0&longitude=11.3&hourly=temperature_2m,precipitation_probability,precipitation&daily=precipitation_sum&current_weather=true&forecast_days=3&timezone=Europe%2FBerlin";
     var url = "https://api.open-meteo.com/v1/dwd-icon?latitude=46.0&longitude=11.3&current_weather=true&timezone=Europe%2FBerlin";
     
     fetch(url).then(function(response){
@@ -62,31 +61,3 @@ function weather_data() {
         console.log(error);
     })
 };
-
-
-// weatherData.addEventListener('click',function(e){
-//     e.preventDefault();
-//     var url = "https://api.open-meteo.com/v1/forecast?latitude=46.0&longitude=11.3&hourly=temperature_2m,precipitation_probability,precipitation&daily=precipitation_sum&current_weather=true&forecast_days=3&timezone=Europe%2FBerlin";
-    
-//     fetch(url).then(function(response){
-//         if(response.ok){
-//             return response.json();
-//         }else{
-//             throw new Error(Error);
-//         }
-//     }).then(function(data){
-//         w_code_msg = w_interpretation(data.current_weather.weathercode);
-//         const html = `
-//         <p>
-//         <h2 class="text-danger text-center">
-//         Temperature:${data.current_weather.temperature}°C<br>
-//         ${w_code_msg}
-//         </h2>
-//         `;
-//         document.getElementById("display_data").innerHTML = html;
-//     }).catch(function(error){
-//         console.log(error);
-//     });
-    
-// });
-

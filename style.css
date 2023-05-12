@@ -35,7 +35,6 @@ body{
     border: 1px solid rgba(255,255,255,0.34);
     flex-basis: 400px;
     height: 540px;
-    padding: 20px 35px;
 }
 
 .screen{
@@ -47,21 +46,16 @@ body{
     box-shadow: 0 10px 30px rgba(35,35,35,0.1);
     color: #232323;
     font-size: 15px;
-    overflow: auto;
-    padding: 10px;
+    overflow: visible;
+    padding: 60px;
     text-align: right;
-    width: 326px;
-    margin: 2% 0;
+    height: 440px;
+    margin: 0 0;
+    align-content: center;
 }
 
 .screen:hover{
     background-color: #63c9bf;
-}
-
-.calc-button-row{
-    display: flex;
-    justify-content: space-between;
-    margin: 5% 0;
 }
 
 .location{
@@ -73,42 +67,18 @@ body{
     border-radius: 10px 10px 1px 1px;
     box-shadow: 0 5px 10px #232323;
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 60;
     height: 36px;
-}
-
-.calc-button{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255,255,255,0.75);
-    border: 1px solid rgba(35,35,35,0.1);
-    border-radius: 1px;
-    box-shadow: 0 30px 30px rgba(35,35,35,0.1);
-    color: #232323;
-    flex-basis: 10%;
-    font-family: inherit;
-    font-size: 24px;
-    height: 36px;
-    text-align: center;
-    text-decoration-line: underline;    
-}
-
-.calc-button:hover{
-    background-color: inherit;
-}
-
-.calc-button:active{
-    background-color: #ffef78;
 }
 
 .timer{
     text-align: center;
     font-size: small;
-    padding-top: 300px;
+    padding-top: 10px;
 }
 
 .signature{
     text-align: center;
     font-size: smaller;
-    padding-bottom: 20px;
+    padding-top: 0px;
 }
