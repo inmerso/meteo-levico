@@ -55,7 +55,7 @@ body{
 }
 
 .screen:hover{
-    background-color: #63c9bf;
+    background: linear-gradient(1400deg, #92a7eb, #ffef78,#63c96c);
 }
 
 .location{

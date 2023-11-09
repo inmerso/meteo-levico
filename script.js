@@ -48,9 +48,9 @@ function weather_data() {
         const html = `
             <p>
             <h2 class="text-danger text-center">
-            temperature:${data.current_weather.temperature}°C<br>
-            ${w_code_msg}<br>
-            wind:${data.current_weather.winddirection}@${data.current_weather.windspeed}km/h
+            temperature: ${data.current_weather.temperature}°C<br><br>
+            ${w_code_msg}<br><br>
+            wind: ${data.current_weather.winddirection}@${data.current_weather.windspeed}km/h
             </h2>
             `;
         document.getElementById("display_data").innerHTML = html;
